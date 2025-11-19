@@ -1,0 +1,230 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Atika contact us</title>
+    
+
+  </head>
+    
+  <body>
+  <!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Contact | Atika Islamic High School | أتيكا الثانوية الإسلامية</title>
+
+  <style>
+    :root {
+      --cream: #fff5e6;
+      --green: #4CAF50;
+      --orange: #FF9800;
+      --white: #ffffff;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: var(--cream);
+      color: #333;
+    }
+
+    /* Header */
+    header {
+      background-color: var(--green);
+      color: var(--white);
+      text-align: center;
+      padding: 20px;
+    }
+
+    .logo {
+      font-size: 2.5em;
+      font-weight: bold;
+      color: var(--orange);
+      background-color: var(--white);
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    header h1 {
+      margin: 10px 0 5px 0;
+      font-size: 2em;
+    }
+
+    header p {
+      margin: 0;
+      font-size: 1.2em;
+    }
+
+    /* Navigation */
+    nav {
+      background-color: var(--orange);
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: var(--white);
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Main content */
+    main {
+      padding: 40px 20px;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    main h2 {
+      color: var(--green);
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    form {
+      background-color: var(--white);
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    form label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+
+    form button {
+      background-color: var(--green);
+      color: var(--white);
+      border: none;
+      padding: 12px 20px;
+      font-size: 1em;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    form button:hover {
+      background-color: var(--orange);
+    }
+
+    footer {
+      background-color: var(--green);
+      color: var(--white);
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+
+    footer p {
+      margin: 5px 0;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <header>
+
+    <div class="logo">AIHS</div>
+
+    <h1>Atika Islamic High School</h1>
+
+    <p>أتيكا الثانوية الإسلامية</p>
+
+  </header>
+
+  <nav>
+
+    <a href="index.html">Home</a>
+
+    <a href="about.html">About</a>
+
+    <a href="students.html">Students</a>
+
+    <a href="activities.html">Activities</a>
+
+    <a href="contact.html">Contact</a>
+
+  </nav>
+
+  <main>
+
+    <h2>Contact Us</h2>
+
+    <form id="contactForm">
+
+      <label for="name">Full Name</label>
+
+      <input type="text" id="name" placeholder="Your full name" required>
+
+      <label for="email">Email</label>
+
+      <input type="email" id="email" placeholder="Your email" required>
+
+      <label for="message">Message</label>
+
+      <textarea id="message" rows="5" placeholder="Type your message here" required></textarea>
+
+      <button type="submit">Send Message</button>
+
+    </form>
+
+  </main>
+
+  <footer>
+
+    <p>Contact: 755 965926 | Location: Jinja City</p>
+
+    <p>&copy; 2025 Atika Islamic High School | أتيكا الثانوية الإسلامية</p>
+
+  </footer>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      var name = encodeURIComponent(document.getElementById('name').value);
+      var email = encodeURIComponent(document.getElementById('email').value);
+      var message = encodeURIComponent(document.getElementById('message').value);
+      var whatsappNumber = "755965926"; // School WhatsApp number
+      var whatsappURL = `https://wa.me/${whatsappNumber}?text=Name: ${name}%0AEmail: ${email}%0AMessage: ${message}`;
+      window.open(whatsappURL, '_blank');
+    });
+  </script>
+
+</body>
+
+</html>
+    
+  </body>
+  
+</html>
